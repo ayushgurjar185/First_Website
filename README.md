@@ -11,7 +11,7 @@ git clone https://github.com/verma-kunal/AWS-Session.git
 DOMAIN= ""
 PORT=3000
 STATIC_DIR="./client"
-
+#For the below keys we use Stripe and go to the developer option to copy the keys
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
 ```
@@ -67,6 +67,6 @@ npm install
 npm run start
 ```
 
-> NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
+> NOTE - We will have to edit the **inbound rules to specific port no 3000** in the security group of our EC2, in order to allow traffic from our particular port
 
 ### Project is deployed on AWS 🎉
